@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #top button{
+        background-color: lightsalmon;
+        margin-left: 40px;
+        padding: 10px;
+        width: 150px;
+    }
+    .left{
+        text-align: right;
+        padding: 10px;
+    }
+    .right{
+        /* text-align: left; */
+        margin-right: 10px;
+        padding: 10px;
+    }
+    .tab{
+        margin-left: 400px;
+        width: 800px;
+        padding: 10px;
+    }
+    .head{
+        text-align: center;
+    }
+    .wid{
+        width: 230px;
+    }
+    #top{
+        padding: 50px;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div id="top">
+        <button><a href="index.html">Home</a></button>
+        <button><a href="form.html">Form One</a></button>
+        <button><a href="formtwo.html">Form Two</a></button>
+        <button><a href="table.html">Table</a></button>
+    </div>
+        <h1 class="head">Survey Form</h1>
+        <p class="head">Let us know we can improve freeCodeCamp</p>
+    <table class="tab">
+    <tbody>
+        <tr>
+            <td class="left">* Name</td>
+            <td class="right"><input type="text" placeholder="Enter your name" class="wid"></td>
+        </tr>
+
+        <tr>
+            <td class="left">* Email</td>
+            <td class="right"><input type="email" placeholder="Enter YourEmail" class="wid"></td>
+        </tr>
+
+        <tr>
+            <td class="left">* Age</td>
+            <td class="right"><input type="number" placeholder="Age" class="wid"></td>
+        </tr>
+        <tr>
+            <td class="left">Which option best describes your current role?</td>
+            <td class="right">
+                <select name="stu" id="stu">
+                    <option value="Student" name="stu">Student</option>
+                    <!-- <option value="Student" name="stu">Student</option>
+                    <option value="Student" name="stu">Student</option> -->
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="left">* How likely is that you would recommend freeCodeCamp to a friend?</td>
+            <td class="right">
+                <input type="radio" name="rad">
+                <label for="rad">Definitely</label><br>
+                <input type="radio" name="rad">
+                <label for="rad">Maybe</label><br>
+                <input type="radio" name="rad">
+                <label for="rad">Not sure</label>
+            </td>
+        </tr>
+        <tr>
+            <td class="left">What do you like most in FCC:</td>
+            <td class="right"><select name="stu" id="stu">
+                <option value="Student" name="stu">select an option</option>
+                <!-- <option value="Student" name="stu"></option>
+                <option value="Student" name="stu"></option> -->
+            </select>
+        </td>
+        </tr>
+        <tr>
+            <td class="left">Things that should be omproved in the future (Check all that apply):</td>
+            <td class="right"><input type="checkbox">Froent-end Project <br>
+                <input type="checkbox">Back-end Project <br>
+                <input type="checkbox">Data Visualization 
+            </td>
+        </tr>
+    </tbody>
+    </table>
+    
+</body>
+</html>

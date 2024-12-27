@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #top button{
+        background-color: lightsalmon;
+        margin-left: 40px;
+        padding: 10px;
+        width: 150px;
+    }
+    #top{
+        padding: 50px;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div id="top">
+        <button><a href="index.html">Home</a></button>
+        <button><a href="form.html">Form One</a></button>
+        <button><a href="formtwo.html">Form Two</a></button>
+        <button><a href="table.html">Table</a></button>
+    </div>
+    <h1>Travel reservation form</h1>
+    <h3>* denotes mandotory</h3>
+    <form action="">
+        Full name*:<br><input type="text" placeholder="FirstName LastName">
+        <br><br>
+        Email address*:<br><input type="text" placeholder="EMAIL ADDRESS">
+        <br><br>
+        Select Tour Package* :<br>
+        <select name="city" id="city">
+            <option value="city">Kashmir</option>
+            <option value="city">Quetta</option>
+            <option value="city">Islamabad</option>
+            <option value="city">Multan</option>
+            <option value="city">Lahore</option>
+            <option value="city">K.P.K</option>
+        </select>
+        <br><br>
+        Arrival date*:<br><input type="number" placeholder="10-10-2000">
+        <br><br>
+        Numbers of persons*:<br><input type="text" placeholder="UNKNOWN-TYPE">
+        <br><br>
+        What would you want to avail?*:
+        <table>
+            <tr>
+                <td>Boarding : </td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Fooding : </td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Sight seeing : </td>
+                <td><input type="checkbox"></td>
+            </tr>
+    </table>
+    <br><br>
+    Discount Coupon code:<br><input type="text" placeholder="UNKNOWN-TYPE">
+    <br><br>
+    Terms and conditions*<br>
+    <!-- <input type="radio"> I agree
+    <input type="radio"> I disagree -->
+    <input type="radio" name="agr">
+    <label for="">I agree</label>
+    <input type="radio" name="agr">
+    <label for="">I disagree</label>
+    <br><br>
+    <input type="submit" value="Complete Reservation">
+    <input type="reset" value="Changes">
+    </form>
+    
+</body>
+</html>
